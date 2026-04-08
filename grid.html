@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>3D.NOZZLE</title>
+ <style> 
+        header,footer{
+            text-align: center;
+            color: white;
+        }
+        .contenedor{
+            grid-template-areas:
+            "header header header header"
+            "main   main   main   aside"
+            "main   main   main   aside"
+            "main   main   main   aside"
+            "main   main   main   aside"
+            "footer footer footer footer"
+            ;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        header{
+            grid-area: header;
+            background-color: black;
+        }
+        main{
+            grid-area: main;
+            background-color: white;
+        }
+        aside{
+            grid-area: aside;
+            background-color: gray;
+        }
+        footer{
+            grid-area: footer;
+            background-color: black;
+           }
+  </style>
+</head>
+
+<body class="contenedor">
+    <header>
+        <h1>Ejemplo de display</h1>
+    </header>
+    <main>
+        contenido 
+    </main>
+    <aside>
+        opcines menu
+    </aside>
+    <footer>
+        Desenvolupado por Luis Pila 
+    </footer>
+</body>
+
+</html>
