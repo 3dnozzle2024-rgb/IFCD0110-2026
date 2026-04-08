@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>3D.NOZZLE
+       
+    </title>
+
+ <style> 
+        header,footer{
+            text-align: center;
+            color: white;
+        }
+        .imagen{
+            position: relative;
+            top: -307px;
+            left: 630px;
+            width: 500px;
+        }
+       .articulo{
+            position: relative;
+            top: auto;
+            left: auto;
+            width:600px;
+        }
+        .contenedor{
+            display: grid;
+            grid-template-areas:
+            "header header header header"
+            "main   main   main   aside"
+            "main   main   main   aside"
+            "main   main   main   aside"
+            "main   main   main   aside"
+            "footer footer footer footer"
+            ;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        header{
+            grid-area: header;
+            background-color: black;
+        }
+        main{
+            grid-area: main;
+            background-color: white;
+        }
+        aside{
+            grid-area: aside;
+            background-color: gray;
+        }
+        footer{
+            grid-area: footer;
+            background-color: black;
+           }
+       
+  </style>
+</head>
+
+<body class="contenedor">
+    <header>
+        <h1><b>3D.NOZZLE</b></h1>
+         <img src="imagen/logo 3d (1).png" alt="logo empresa" width="100px">
+    </header>
+    <main>
+        <h2>Concepto impresion 3d.</h2>
+        <article class="articulo">
+            La impresión 3D, también conocida como fabricación aditiva, es un proceso tecnológico que crea objetos tridimensionales a partir de un archivo digital.
+A diferencia de los métodos tradicionales de fabricación (como el tallado o el fresado, que quitan material), la impresión 3D construye el objeto capa por capa, depositando material de forma precisa hasta completar la pieza.
+       
+            <h3>Como funciona?</h3>
+        <ul>
+            <li><b>Diseño Digital:</b> Todo comienza con un modelo en 3D creado en un software de diseño asistido por computadora (CAD) o mediante un escaneo 3D. </li>
+            <li><b>Laminado (Slicing): </b>Un software especializado "corta" el modelo digital en cientos o miles de capas horizontales delgadas.</li>
+            <li><b>Impresión:</b> La impresora lee estas instrucciones y deposita (o endurece) el material capa sobre capa.</li>
+            <li><b>Post-procesamiento:</b> Dependiendo de la tecnología, la pieza puede requerir limpieza, curado o la eliminación de soportes.</li>
+        </ul>
+        <img class="imagen" src="imagen/luis.png" alt="impresora 3d">
+            <section>
+                <h4><b>Principales Tecnologías</b></h4>
+            </section>
+        </article>
+    </main>
+    <aside>
+       <link rel="stylesheet" href="https://www.printables.com/">
+    </aside>
+    <footer>
+        Desenvolupado por Luis Pila 
+    </footer>
+</body>
+
+</html>
