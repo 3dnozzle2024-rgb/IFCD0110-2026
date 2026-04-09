@@ -4,30 +4,49 @@
     <meta charset="UTF-8">
     <title>3D.NOZZLE</title>
     <style>
-              header, footer{
+        header, footer{
             text-align: center;
             background-color: black;
             color: white;}
         main{
-            height: 100px;
+            height: 5cap;
             display: flex;
-            
+           
         }
-        .flexdirection{
-            dis
-            width:;
+        .padre{
+            
+            width:auto;
             height: auto;
             margin: auto;
             border: 5px solid;
             flex-direction: row;
+            
         }
+         
         .caja{
             width: 150px; ;
-            height: 150px;
-            margin: 5px; ;
-            border: 5px solid;
-        }   
-           .rojo{
+            height:200px;
+            margin: 10px; ;
+            border: 2px solid;
+           flex-direction: column;
+           display: flex;
+   
+          
+        }
+          .hijo{
+            display: flex; 
+            height: 400px;
+            border: 3px;   
+           flex-wrap: wrap;
+            
+        } 
+        .cajita{
+            width: 15px;
+            height: 15px;
+            flex-wrap: wrap;
+            
+        }
+        .rojo{
             background-color: red;
         }
         .azul{
@@ -43,19 +62,255 @@
 
 </head>
 <body>
-    <main></main>
+
+    
     <header>
         <h1><b>Ejercicio flex.</b></h1>
         <hr>
     </header>
-    <h2> Flex direction</h2>
-    <div class="flexdirection">
-        <div class="caja rojo">row</div>
-        <div class="caja azul">row-reverse</div>
-        <div class="caja amarillo">column</div>
-        <div class="caja verde">column-reverse</div>
+    <main class="padre">
+        <h2> Flex direction</h2>
+        <div class="caja">
+            <div>
+                Row
+            </div>
+            <div class="hijo">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+        <div class="caja">
+            <div>
+            Row-reverse
+            </div>
+            <div class="hijo" style=" flex-direction: row-reverse;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+        <div class="caja">
+            <div>
+            Column
+            </div>
+            <div class="hijo" style=" flex-direction: column;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+        <div class="caja">
+            <div>
+            Column reverse
+            </div>
+            <div class="hijo" style=" flex-direction: column-reverse;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
         </div>
         </main>
+        <main class="padre">
+        <h2> Justify-content</h2>
+        <div class="caja">
+            <div>
+                Flex-start
+            </div>
+            <div class="hijo" style="justify-content: flex-start;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+        <div class="caja">
+            <div>
+                Flex-end 
+            </div>
+            <div class="hijo" style=" justify-content: flex-end;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+        <div class="caja">
+            <div>
+            Center 
+            </div>
+            <div class="hijo" style=" justify-content: center;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+        <div class="caja">
+            <div>
+            Space-between 
+            </div>
+            <div class="hijo" style=" justify-content: space-between;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+           <div class="caja">
+            <div>
+            Space-around  
+            </div>
+            <div class="hijo" style=" justify-content: space-around;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+        </main>
+        <main class="padre">
+        <h2> Align-items </h2>
+        <div class="caja">
+            <div>
+                Flex-start
+            </div>
+            <div class="hijo" style="align-items: flex-start ;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+        <div class="caja">
+            <div>
+                Flex-end 
+            </div>
+            <div class="hijo" style="align-items: flex-end;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+        <div class="caja">
+            <div>
+            Center 
+            </div>
+            <div class="hijo" style=" align-items: center;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+        <div class="caja">
+            <div>
+            Baseline
+            </div>
+            <div class="hijo" style="align-items: baseline;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+           <div class="caja">
+            <div>
+            Stretch
+            </div>
+            <div class="hijo" style=" align-items: stretch;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+        </main>
+        <main class="padre">
+        <h2> Align-contem </h2>
+        <div class="caja">
+            <div>
+                Flex-start
+            </div>
+            <div class="hijo" style="align-content: flex-start;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+        <div class="caja">
+            <div>
+                Flex-end 
+            </div>
+            <div class="hijo" style="align-content: flex-end;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+        <div class="caja">
+            <div>
+            Center 
+            </div>
+            <div class="hijo" style=" align-content: center;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+        <div class="caja"style="align-content: baseline;">
+
+            <div>
+            Baseline
+            </div>
+            <div class="hijo"></div>
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+            </div>
+        </div>
+           <div class="caja">
+            <div>
+            Stretch
+            </div>
+            <div class="hijo" style=" align-content: stretch;">
+
+                <div class="cajita rojo">1</div>
+                <div class="cajita azul">2</div>
+                <div class="cajita amarillo">3</div>
+                <div class="cajita verde">4</div>
+                
+            </div>
+        </div>
+        </main>
+        
     <footer>
         Desenvolupado por Luis Pila
     </footer>
