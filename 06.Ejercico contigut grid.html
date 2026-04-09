@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio contenido grid</title>
+    <style>
+        header,footer{
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+        .caja{
+            width: 150px; ;
+            height:200px;
+            margin: 10px; ;
+            border: 2px solid;
+           flex-direction: column;
+           display: flex;
+        }
+        .contenedor{
+            display: grid;
+            grid-template-areas:
+            "header header header header"
+            "menu   main    main  aside"
+            "menu   main   main   aside"
+            "menu   main   main   aside"
+            "menu   main   main   aside"
+            "footer footer footer footer"
+            ;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+            }
+             header{
+            grid-area: header;
+            background-color: black;
+            }
+            main{
+            grid-area: main;
+            background-color: pink;
+            }
+            aside{
+            grid-area: aside;
+            background-color: rgb(128, 128, 128);
+            }
+            footer{
+            grid-area: footer;
+            background-color: black;
+            }
+            menu{
+            grid-area: menu;
+            background-color:blue;
+            }
+    </style>
+</head>
+<body class="contenedor">
+    <header>
+        <b>Cabecera</b>
+    </header>
+    <main>
+       <div class="caja">
+
+        </div>
+
+    </main>
+    <menu>
+
+    </menu>
+    <aside>
+
+    </aside>
+    <footer>
+        <b>Desenvolupado por Luis Pila</b>
+    </footer>
+    
+</body>
+</html>
