@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta>
+    <title>Caja semantica</title>
+    
+        <style>
+            .cajatitulo{
+            position: absolute;       
+            left: 0px;
+            top: -21px;
+            height: 20%;
+            width: 98%;
+            background-color: gray;   
+             }
+             
+        .cajalateral{
+          position: absolute;       
+          left: 0px;
+          top: 140px;
+          height: 442px;
+          width: 20%;
+          background-color:orange;   
+         }
+        .cajamain{
+        position: absolute; 
+        left: 20%;
+        top: 140px; 
+        height: 444px;
+        width: 58%;
+        background-color: pink;}
+         .cajaaside{
+        position: absolute;
+        left: 78%;
+        top: 140px;
+        height: 442px;
+        width: 20%;
+        background-color: green;
+        }
+        .cajafooter{
+        position: absolute;
+        left: 0px;
+        top: 582px;
+        height: 20%;
+        width: 98%;
+        background-color: blue;
+        }
+        .cajaseccion{
+        position: absolute;
+        left: 15%;
+        top: 20%;
+        height: 60%;
+        width: 28%; 
+        background-color: rgb(128, 128, 128);       
+    }
+     .cajaseccion2{
+        position: absolute;
+        left: 57%;
+        top: 20%;
+        height: 60%;
+        width: 28%; 
+        background-color: rgb(128, 128, 128);       
+    }
+    .cajaart1{
+        position: absolute;
+        background-color: aqua;       
+    }
+     </style>
+</head>
+<body>
+    <header>
+      <h1 class="cajatitulo">Cabecera</h1>
+    </header>
+        <main class="cajamain" ><h1>Principal</h1>
+            <div class="cajaseccion"><h2>Sección</h2>
+                <div class="cajaart1" style="width: 75%; height: 25%; top: 25%;left: 10%;">Articulo</div>
+                <div class="cajaart1" style="width: 75%; height: 25%; top: 65%;left: 10%;">Articulo</div>
+            </div>
+            <div class="cajaseccion2"><h2>Sección 2</h2>
+                <div class="cajaart1" style="width: 75%; height: 25%; top: 25%;left: 10%;">Articulo</div>
+                <div class="cajaart1" style="width: 75%; height: 25%; top: 65%;left: 10%;">Articulo</div>
+            </div>
+        </main>       
+        <aside class="cajalateral"><h1>Lateral</h1></aside>
+        <aside class="cajaaside"><h1>Aside</h1></aside>
+        <footer class="cajafooter"><h1>Footer</h1></footer>
+</html>
